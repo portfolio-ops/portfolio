@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weldon Ruto | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #121212, #4caf50, #81c784);
+            background-size: 300% 300%;
+            animation: backgroundAnimation 10s infinite;
+            color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #4caf50;
+        }
+
+        .content-box {
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Buttons */
+        .contact-links a {
+            margin: 0.5rem;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: 1px solid #4caf50;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .contact-links a:hover {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        /* Dynamic Dotted Animation */
+        .animated-dots {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: repeat(10, 10px);
+            grid-template-rows: repeat(10, 10px);
+            gap: 5px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: dotAnimation 2s infinite;
+        }
+
+        .dot:nth-child(odd) {
+            background-color: #4caf50;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes dotAnimation {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(0.5); opacity: 0.5; }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weldon Ruto</h1>
+        <p>Geospatial Scientist | Academic Writer | Front-End Developer</p>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section class="section about">
+            <h2>About Me</h2>
+            <div class="content-box">
+                <p>
+                    Weldon Ruto is a Kenyan professional with a robust academic background in 
+                    <strong>Geospatial Information Science</strong> and a diverse skill set encompassing 
+                    GIS, remote sensing, technical writing, and front-end development. Proficient in tools like 
+                    <strong>AutoCAD, ArcGIS,</strong> and <strong>ERDAS</strong>, Weldon combines geospatial expertise 
+                    with advanced coding skills in <strong>R, HTML, CSS,</strong> and <strong>JavaScript</strong> to create 
+                    impactful solutions.
+                </p>
+                <p>
+                    Born and raised in Bomet, in the savannah areas of the Great Rift, Weldon is an inspiring 
+                    and optimistic individual who thrives on challenges and is driven by a passion for 
+                    innovation and continuous learning.
+                </p>
+            </div>
+        </section>
+
+        <!-- Professional Academic Writer Section -->
+        <section class="section academic-writer">
+            <h2>Professional Academic Writer</h2>
+            <div class="content-box">
+                <p>
+                    Weldon Ruto is a professional academic writer with expertise in unit management for campuses worldwide 
+                    and proficiency in academic writing styles such as <strong>MLA, APA, APA7, Chicago,</strong> and others. 
+                    He excels in conducting thorough research and analysis to produce original, well-structured academic 
+                    content tailored to specific academic audiences.
+                </p>
+                <p>
+                    Weldon is highly skilled in editing and proofreading, ensuring clarity, accuracy, and adherence to formatting 
+                    guidelines. His ability to simplify complex ideas while managing time effectively and meeting strict deadlines 
+                    has made him a valuable asset in producing accessible and high-quality academic work.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services">
+            <h2>What I Offer</h2>
+            <div class="content-box">
+                <h3>Geospatial Services</h3>
+                <ul>
+                    <li>GIS and Mapping Solutions</li>
+                    <li>Remote Sensing and Data Analysis</li>
+                    <li>Spatial Planning and Surveying</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Technical Writing</h3>
+                <ul>
+                    <li>SEO-Optimized Blog Writing</li>
+                    <li>Technical Documentation</li>
+                    <li>Creative Copywriting and Ad Copy</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Front-End Development</h3>
+                <ul>
+                    <li>Responsive Website Design</li>
+                    <li>JavaScript Frameworks: React, Angular</li>
+                    <li>UI/UX Prototyping with Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact">
+            <h2>Contact Me</h2>
+            <div class="content-box">
+                <p>Have a project in mind? Reach out to me directly.</p>
+                <div class="contact-links">
+                    <a href="mailto:rutoweldon459@gmail.com">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://wa.me/254716918786" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="animated-dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Weldon Ruto. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
